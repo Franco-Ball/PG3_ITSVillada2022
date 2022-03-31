@@ -1,13 +1,14 @@
-def sort_list():
+def sort_list() -> list:
     list = []
     n = int(input("Ingrese la cantidad de numeros que tendra su lista : "))
- 
+
     for i in range(0, n):
         num = int(input())
- 
-        list.append(num) 
+
+        list.append(num)
 
     list.sort(reverse=True)
-    print(list)
+    return list
 
-sort_list()
+
+print(sort_list())
