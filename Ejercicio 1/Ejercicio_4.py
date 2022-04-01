@@ -1,9 +1,9 @@
 def sort_list() -> list:
-    list = []
-    n = int(input("Ingrese la cantidad de numeros que tendra su lista : "))
+    list: int = []
+    n: int = int(input("Ingrese la cantidad de numeros que tendra su lista : "))
 
     for i in range(0, n):
-        num = int(input())
+        num: int = int(input())
 
         list.append(num)
 

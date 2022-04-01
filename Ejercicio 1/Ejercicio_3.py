@@ -1,9 +1,9 @@
 print("Ingrese el ancho del rectangulo")
-ancho = int(input(""))
+ancho: int = int(input(""))
 print("Ingrese el alto del rectangulo")
-alto = int(input(""))
+alto: int = int(input(""))
 print("Ingrese el caracter con el que se representara el rectangulo")
-carac = str(input(""))
+carac: str = str(input(""))
 
 
 def Rectangle(ancho: int, alto: int, carac: str) -> None:

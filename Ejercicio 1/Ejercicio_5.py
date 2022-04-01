@@ -1,8 +1,8 @@
 print("Ingrese una palabra para verificar si es un palindromo")
-word = input()
+word: str = input()
 
 
-def esCapicua():
+def esCapicua() -> bool:
 
     if str(word) == str(word)[::-1]:
         print("True")

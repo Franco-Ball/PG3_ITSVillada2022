@@ -1,11 +1,14 @@
+from xmlrpc.client import boolean
+
+
 print("Ingrese un numero para verificar si es step")
 
 num = input()
 
 
-def isStep(num):
+def isStep(num) -> bool:
     num = str(num)
-    prevDigit = int(num[0]) - 1
+    prevDigit: int = int(num[0]) - 1
 
     for i in str(num):
         if int(i) - 1 == prevDigit or int(i) + 1 == prevDigit:
@@ -17,5 +20,5 @@ def isStep(num):
     return True
 
 
-step = isStep(num)
+step: bool = isStep(num)
 print(step)
