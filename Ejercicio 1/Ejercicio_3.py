@@ -1,16 +1,12 @@
-print("Ingrese el ancho del rectangulo")
-ancho: int = int(input(""))
-print("Ingrese el alto del rectangulo")
-alto: int = int(input(""))
-print("Ingrese el caracter con el que se representara el rectangulo")
-carac: str = str(input(""))
+def print_rectangle() -> None:
+    ancho: int = int(input("Ingrese el ancho del rectangulo: "))
+    alto: int = int(input("Ingrese el alto del rectangulo: "))
+    carac: str = str(
+        input("Ingrese el caracter con el que se representara el rectangulo: ")
+    )
 
-
-def Rectangle(ancho: int, alto: int, carac: str) -> None:
     for x in range(alto):
         print(ancho * carac)
 
 
-print("----------")
-Rectangle(ancho, alto, carac)
-print("----------")
+print_rectangle()
