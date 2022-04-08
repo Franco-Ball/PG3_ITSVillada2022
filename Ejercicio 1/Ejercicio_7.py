@@ -1,6 +1,3 @@
-from xmlrpc.client import boolean
-
-
 print("Ingrese un numero para verificar si es step")
 
 num = input()
