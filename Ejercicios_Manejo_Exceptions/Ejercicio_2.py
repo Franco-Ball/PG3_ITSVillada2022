@@ -1,6 +1,3 @@
-from asyncio import as_completed
-
-
 while True:
     try:
         x = int(input("Ingrese un numero: "))
